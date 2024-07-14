@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Wedesi-desi-curries</title>
+    <link rel="icon" 
+     type="image/png" 
+     href="logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="menu1.css">
+
+    <!-- <style>
+        body {
+            background: white;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .slider {
+            padding: 40px;
+            padding-left: 10%;
+            color: #fff;
+            margin-top: -70px;
+        }
+
+        .slider .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider__flex {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .slider__col {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        .slider__prev,
+        .slider__next {
+            cursor: pointer;
+            text-align: center;
+            color: aqua;
+            font-size: 14px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 20px;
+        }
+
+        .slider__prev:focus,
+        .slider__next:focus {
+            outline: none;
+        }
+
+        .slider__thumbs {
+            height: calc(700px - 200px);
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+        .slider__thumbs .slider__image {
+            transition: 0.25s;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: 0.5;
+        }
+
+        .slider__thumbs .slider__image:hover {
+            opacity: 1;
+        }
+
+        .slider__thumbs .swiper-slide-thumb-active .slider__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .slider__images {
+            height: 600px;
+            overflow: hidden;
+            /* Add this line to hide overflow */
+        }
+
+        .slider__images .slider__image img {
+            transition: 3s;
+        }
+
+        .slider__images .slider__image:hover img {
+            transform: scale(1.1);
+        }
+
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .slider__image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .fancy-border-radius {
+            width: 47%;
+            height: 20%;
+            background: black;
+            position: absolute;
+            bottom: 0%;
+            right:0%;
+            margin-top: 45%;
+            z-index: 5;
+            border-radius: 0px 0px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            opacity: 0.8;
+            padding-left: 1%;
+        }
+
+        .ordernow button {
+            width: 20%;
+            height: 15%;
+            border: 0;
+            top: 20%;
+            margin-top: 40%;
+            position: absolute;
+            margin-left: 80%;
+            border-radius: 0px 0px 12px 0px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+            cursor: pointer;
+            color: #121212;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .ordernow button:hover {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .content {
+            margin: 0;
+            margin-left: -1%;
+            font-size: 15px;
+            background-color: black;
+        }
+
+        .content h2 {
+            color: red;
+            margin: 0;
+            font-size: large;
+            margin-top: -5px;
+            background-color: transparent;
+        }
+
+        @media (max-width: 767.98px) {
+            .slider__flex {
+                flex-direction: column-reverse;
+            }
+
+            .slider__col {
+                flex-direction: row;
+                align-items: center;
+                margin-right: 0;
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .slider__images {
+                width: 100%;
+            }
+
+            .slider__thumbs {
+                height: 100px;
+                width: calc(100% - 96px);
+                margin: 0 16px;
+            }
+
+            .slider__prev,
+            .slider__next {
+                height: auto;
+                width: 32px;
+               
+            }
+        }
+
+    </style> -->
+</head>
+
+<body>
+    <header >
+        <nav>
+          
+          <ul class="nav-bar ">
+         
+          <a href="we-desi-main-page.html" class="logo">
+           <img src= "logo.jpg" class="logo" height="91px" width="111px" align="left">
+          </a>
+          <input  type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="we-desi-main-page.html" class="style home-button">HOME</a></li>
+     <li><a href="we-desi-aboutus.html" class="style aboutus-button">ABOUT US</a></li>
+            <li><a href="we-desi-gallery.html"class="style gallery-button">GALLERY</a></li>
+            <li><a href="we-desi-menupage.html"class="style menu-button">MENU</a></li>
+            <li><a href="we-desi-sweets.html"class="style sweets-button">SWEETS</a></li>
+                <li><a href="we-desi-contactus.html"class="style contactus-button">CONTACT US</a></li>
+            </span>
+            <label for="check" class="open-menu"><a href="we-desi-menupage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></label>
+          </ul>
+        </nav>
+        <p class="menu1"> MENU > <span class="view">VIEW ALL > DESI CURRIES</span></p><br>
+
+        </header>
+        <navbar-sidebar class="side" >
+            <div class="list-left scrollmenu">
+                <ul class="ul-list">
+                    <li    class="list-left-11"><a href="we-desi-menupage.html" class="list-left-1">MENU</a></li>
+                    
+                <li  class="list-left-1"> <a href="chatpata-chaat.html" class="list-left-1">chatpatta chaat</a></li>
+                <li  class="list-left-1"><a href="tikke.html" class="list-left-1">tikke-shikke</a></li>
+                <li  class="list-left-1" ><a href="burger.html" class="list-left-1">burger and rolls</a></li>
+                <li  class="list-left-1" ><a href="chinese.html" class="list-left-1">indo chinese</a></li>
+                <li  class="list-left-1" ><a href="south.html" class="list-left-1">south indian</a></li>
+                <li  class="list-left-1" ><a href="desi.html" class="list-left-1">desi curries</a></li>
+                <li  class="list-left-1" ><a href="parantha.html" class="list-left-1">parantha and naan</a></li>
+                <li  class="list-left-1" ><a href="combo.html" class="list-left-1">we desi combo</a></li>
+                <li  class="list-left-1" ><a href="rice.html" class="list-left-1">rice</a></li>
+                <li  class="list-left-1" ><a href="drinks.html" class="list-left-1">drinks</a></li>
+                <li  class="list-left-1" ><a href="dessert.html" class="list-left-1">desserts</a></li>
+                <li  class="list-left-1" ><a href="kids.html"class="list-left-1">kids special</a></li>
+                <li  class="list-left-1" ><a href="sides.html"class="list-left-1">sides</a></li>
+                </ul>  
+                
+                </div>
+
+        </navbar-sidebar>
+  
+        
+            
+                <div  class="horizontalContainer thumb scroll slider"  >
+                <a href="#0">
+                    <img src="https://aartimadan.com/wp-content/uploads/2021/02/shahi-paneer.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#1">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/chilli-paneer-recipe.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#2">
+                    <img src="https://www.ticklingpalates.com/wp-content/uploads/2022/06/paneer-makhani-recipe.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#3">
+                    <img src="https://www.livofy.com/health/wp-content/uploads/2023/03/2023_01_25_creamy_chana_masala_1.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#4">
+                    <img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#5">
+                    <img src="https://i.pinimg.com/originals/7b/91/ba/7b91ba4f2287d29016a0439d5205aa21.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#6">
+                    <img src="https://static01.nyt.com/images/2023/12/21/multimedia/ND-Aloo-Gobi-gkwc/ND-Aloo-Gobi-gkwc-superJumbo.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#7">
+                    <img src="https://eastindianrecipes.net/wp-content/uploads/2020/02/Baingan-Bharta-Roasted-Eggplant-Brooth2.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#8">
+                    <img src="https://cookingfromheart.com/wp-content/uploads/2017/03/Paneer-Tikka-Masala-4.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#9">
+                    <img src="https://www.marionskitchen.com/wp-content/uploads/2021/08/Paneer-Curry8279.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#10">
+                    <img src="https://jessicainthekitchen.com/wp-content/uploads/2023/03/vegan-malai-kofta-21.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#11">
+                    <img src="https://i.ytimg.com/vi/qtGz5Ve_wRk/maxresdefault.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#12">
+                    <img src="https://www.anveshan.farm/cdn/shop/articles/BhindiMasala.jpg?v=1690790485" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#13">
+                    <img src="https://vegecravings.com/wp-content/uploads/2018/02/Mix-Veg-Recipe-Step-By-Step-Instructions.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#14">
+                    <img src="https://myfancypantry.files.wordpress.com/2012/04/untitled-04473.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#15">
+                    <img src="https://www.whiskaffair.com/wp-content/uploads/2014/12/Vegetable-Kadhi-2-3.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#16">
+                    <img src="https://www.kuchpakrahahai.in/wp-content/uploads/2015/09/Rajma-Recipe-Kidney-Beans-Curry.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#17">
+                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/02/Matar-Paneer.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#18">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd00Le2B0IMeb5-BxPTlxHR-yOi7N4k8VPk5GoB-ZpIw&s" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#19">
+                    <img src="https://www.chefkunalkapur.com/wp-content/uploads/2023/02/DSC07602-1300x731.jpg?v=1676875954" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#20">
+                    <img src="https://images.slurrp.com/prod/recipe_images/transcribe/nan/Soya-Chunks-Curry.webp" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#21">
+                    <img src="https://mariasmenu.com/wp-content/uploads/Paneer-Bhurji.png" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#22">
+                    <img src="https://www.thespruceeats.com/thmb/_ar6k9Sqqug6gmmwBP3lQu1aqkk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sarson-ka-saag-1957985-hero-01-7bb3c7be6bec456da4407eda0ef95707.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                
+    
+                
+            </div>
+            
+            <div class="verticalContainer">
+                <div id="content" class="scrollable">
+                <div class="sweet-wrap" id="0">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title" >SHAHI PANEER </h3>
+                                    
+                                    <img src="graph.png" class="cloud">  
+                                    <img src="https://aartimadan.com/wp-content/uploads/2021/02/shahi-paneer.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                   
+                                    <div class="cloud1" id="1"><br><span>$13.99</span> <br> Paneer, simmered with onions and tomatoes in a rich creamy sauce          </div>                       
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title"  >CHILLI PANEER </h3>
+                                      
+                                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/chilli-paneer-recipe.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                        <img src="graph.png" class="cloud">
+                                        <div class="cloud1" id="2"><br><span>$13.99</span> <br>Cubes of fried crispy paneer-tossed in a spicy sauce made with soy sauce, vinegar & chili sauce </div>
+                                            
+                                            </div>                               
+                            </li>
+                        </ul>
+                        </div>
+                <div class="sweet-wrap">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title" >PANEER MAKHANI($13.99)</h3>
+                                    
+                                    
+                                    <img src="https://www.ticklingpalates.com/wp-content/uploads/2022/06/paneer-makhani-recipe.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                    <!-- <img src="graph.png" class="cloud">      -->
+                                    <div class="cloud1" id="3"><br><span></span> <br>
+                                    </div>   
+        
+                          
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title" >CHANA MASALA</h3>
+                                        
+                                        
+                                        <img src="https://www.livofy.com/health/wp-content/uploads/2023/03/2023_01_25_creamy_chana_masala_1.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                        <img src="graph.png" class="cloud">    
+                                        <div  class="cloud1" id="4"><br><span>$9.99</span> <br>Chickpeas cooked with authentic spices </div>                           
+                            </li> 
+                        </ul>
+                        </div>
+                        <div class="sweet-wrap">
+                            <ul class="sweet__items">
+                                                    <li class="sweet__item">
+                                    <div class="food-sweet__item">
+                                        
+                                            <h3 class="food-sweet__title" >DAL MAKHANI</h3>
+                                            
+                                            
+                                            <img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                            <img src="graph.png" class="cloud">      
+                                            <div  class="cloud1" id="5"><br><span>$9.99</span> <br> Mild whole lentils in a creamy buttery base </div>                                                       
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="sweet-wrap">
+                                <ul class="sweet__items">
+                                                        <li class="sweet__item">
+                                        <div class="food-sweet__item">
+                                            
+                                                <h3 class="food-sweet__title" >DAL TADKA</h3>
+                                                
+                                                
+                                                <img src="https://i.pinimg.com/originals/7b/91/ba/7b91ba4f2287d29016a0439d5205aa21.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                <img src="graph.png" class="cloud">      
+                                                <div  class="cloud1" id="6"><br><span>$8.99</span> <br>Yellow lentil cooked with various spices garnished with tomato </div>                                                       
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="sweet-wrap">
+                                    <ul class="sweet__items">
+                                                            <li class="sweet__item">
+                                            <div class="food-sweet__item">
+                                                
+                                                    <h3 class="food-sweet__title" >ALOO GOBHI($9.99)</h3>
+                                                    
+                                                    
+                                                    <img src="https://static01.nyt.com/images/2023/12/21/multimedia/ND-Aloo-Gobi-gkwc/ND-Aloo-Gobi-gkwc-superJumbo.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                    <!-- <img src="graph.png" class="cloud">       -->
+                                                    <div  class="cloud1" id="7"><br><span></span> <br> </div>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="sweet-wrap">
+                                        <ul class="sweet__items">
+                                                                <li class="sweet__item">
+                                                <div class="food-sweet__item">
+                                                    
+                                                        <h3 class="food-sweet__title" >BAINGAN BHARTA</h3>
+                                                        
+                                                        
+                                                        <img src="https://eastindianrecipes.net/wp-content/uploads/2020/02/Baingan-Bharta-Roasted-Eggplant-Brooth2.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                        <img src="graph.png" class="cloud">      
+                                                        <div  class="cloud1" id="8"><br><span>$10.99</span> <br>Eggplant baked in a tandoor, sautéed with herbs and spices </div>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                        <div class="sweet-wrap">
+                                            <ul class="sweet__items">
+                                                                    <li class="sweet__item">
+                                                    <div class="food-sweet__item">
+                                                        
+                                                            <h3 class="food-sweet__title" >PANEER TIKKA MASALA</h3>
+                                                            
+                                                            
+                                                            <img src="https://cookingfromheart.com/wp-content/uploads/2017/03/Paneer-Tikka-Masala-4.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                            <img src="graph.png" class="cloud">      
+                                                            <div  class="cloud1" id="9"><br><span>$13.99</span> <br>Homemade cheese marinated & cooked in a clay oven, then cooked in various Indian spices  </div>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                            <div class="sweet-wrap">
+                                                <ul class="sweet__items">
+                                                                        <li class="sweet__item">
+                                                        <div class="food-sweet__item">
+                                                            
+                                                                <h3 class="food-sweet__title" >PALAK PANEER</h3>
+                                                                
+                                                                
+                                                                <img src="https://www.marionskitchen.com/wp-content/uploads/2021/08/Paneer-Curry8279.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                <img src="graph.png" class="cloud">      
+                                                                <div  class="cloud1" id="10"><br><span>$12.99</span> <br>Home made cheese deep fried and cooked in fresh pureed spinach mildly spiced   </div>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                                <div class="sweet-wrap">
+                                                    <ul class="sweet__items">
+                                                                            <li class="sweet__item">
+                                                            <div class="food-sweet__item">
+                                                                
+                                                                    <h3 class="food-sweet__title" >MALAI KOFTA</h3>
+                                                                    
+                                                                    
+                                                                    <img src="https://jessicainthekitchen.com/wp-content/uploads/2023/03/vegan-malai-kofta-21.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                    <img src="graph.png" class="cloud">      
+                                                                    <div  class="cloud1" id="11"><br><span>$13.99</span> <br>Minced fried vegetables with raisins and cooked in a thick creamy sauce </div>
+                                                        </li>
+                                                    </ul>
+                                                    </div>
+                                                    <div class="sweet-wrap">
+                                                        <ul class="sweet__items">
+                                                                                <li class="sweet__item">
+                                                                <div class="food-sweet__item">
+                                                                    
+                                                                        <h3 class="food-sweet__title">KALI MIRCH PANEER($13.99)</h3>
+                                                                        
+                                                                        
+                                                                        <img src="https://i.ytimg.com/vi/qtGz5Ve_wRk/maxresdefault.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                        <!-- <img src="graph.png" class="cloud">       -->
+                                                                        <div  class="cloud1" id="12"><br><span></span> <br> </div>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
+                                                        <div class="sweet-wrap">
+                                                            <ul class="sweet__items">
+                                                                                    <li class="sweet__item">
+                                                                    <div class="food-sweet__item">
+                                                                        
+                                                                            <h3 class="food-sweet__title" >BHINDI MASALA</h3>
+                                                                            
+                                                                            
+                                                                            <img src="https://www.anveshan.farm/cdn/shop/articles/BhindiMasala.jpg?v=1690790485" width="900" height="620" class="sweet" id="imageid" >
+                                                                            <img src="graph.png" class="cloud">      
+                                                                            <div  class="cloud1" id="13"><br><span>$10.99</span> <br>Okra cooked with special Indian spices sautéed with chopped onions and garlics  </div>
+                                                                </li>
+                                                            </ul>
+                                                            </div>
+                                                            <div class="sweet-wrap">
+                                                                <ul class="sweet__items">
+                                                                                        <li class="sweet__item">
+                                                                        <div class="food-sweet__item">
+                                                                            
+                                                                                <h3 class="food-sweet__title" >MIX VEG($9.99)</h3>
+                                                                                
+                                                                                
+                                                                                <img src="https://vegecravings.com/wp-content/uploads/2018/02/Mix-Veg-Recipe-Step-By-Step-Instructions.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                                <!-- <img src="graph.png" class="cloud">       -->
+                                                                                <div  class="cloud1" id="14"><br><span></span> <br> </div>
+                                                                    </li>
+                                                                </ul>
+                                                                </div>
+                                                                <div class="sweet-wrap">
+                                                                    <ul class="sweet__items">
+                                                                                            <li class="sweet__item">
+                                                                            <div class="food-sweet__item">
+                                                                                
+                                                                                    <h3 class="food-sweet__title" >VEG KORMA($10.99)</h3>
+                                                                                    
+                                                                                    
+                                                                                    <img src="https://myfancypantry.files.wordpress.com/2012/04/untitled-04473.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                                    <!-- <img src="graph.png" class="cloud">       -->
+                                                                                    <div  class="cloud1" id="15"><br><span>$10.99</span> <br> </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                    </div>
+                                                                    <div class="sweet-wrap">
+                                                                        <ul class="sweet__items">
+                                                                                                <li class="sweet__item">
+                                                                                <div class="food-sweet__item">
+                                                                                    
+                                                                                        <h3 class="food-sweet__title" >KADHI($8.99)</h3>
+                                                                                        
+                                                                                        
+                                                                                        <img src="https://www.whiskaffair.com/wp-content/uploads/2014/12/Vegetable-Kadhi-2-3.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                                        <!-- <img src="graph.png" class="cloud">       -->
+                                                                                        <div  class="cloud1" id="16"><br><span></span></div>
+                                                                            </li>
+                                                                        </ul>
+                                                                        </div>
+                                                                        <div class="sweet-wrap">
+                                                                            <ul class="sweet__items">
+                                                                                                    <li class="sweet__item">
+                                                                                    <div class="food-sweet__item">
+                                                                                        
+                                                                                            <h3 class="food-sweet__title" >RAJMA($8.99)</h3>
+                                                                                            
+                                                                                            
+                                                                                            <img src="https://www.kuchpakrahahai.in/wp-content/uploads/2015/09/Rajma-Recipe-Kidney-Beans-Curry.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                                            
+                                                                                            <!-- <img src="graph.png" class="cloud">       -->
+                                                                                            <div  class="cloud1" id="17"><br><span>  </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                            </div>
+                                                                            <div class="sweet-wrap">
+                                                                                <ul class="sweet__items">
+                                                                                                        <li class="sweet__item">
+                                                                                        <div class="food-sweet__item">
+                                                                                            
+                                                                                                <h3 class="food-sweet__title" id="18">MATAR PANEER</h3>
+                                                                                                
+                                                                                                
+                                                                                                <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/02/Matar-Paneer.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                                                <img src="graph.png" class="cloud">      
+                                                                                                <div  class="cloud1" id="18"><br><span>$12.99</span> <br>Home made cheese and peas cooked in creamy curry sauce  </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </div>
+                                                                                <div class="sweet-wrap">
+                                                                                    <ul class="sweet__items">
+                                                                                                            <li class="sweet__item">
+                                                                                            <div class="food-sweet__item">
+                                                                                                
+                                                                                                    <h3 class="food-sweet__title" >PANEER KADHAI</h3>
+                                                                                                    
+                                                                                                    
+                                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd00Le2B0IMeb5-BxPTlxHR-yOi7N4k8VPk5GoB-ZpIw&s" width="900" height="620" class="sweet" id="imageid" >
+                                                                                                    <img src="graph.png" class="cloud">      
+                                                                                                    <div  class="cloud1" id="19"><br><span>$13.99</span> <br>Home made cheese cubes cooked with bell pepper, onions, garlic, ginger & Indian spices.   </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    </div>
+                                                                                    <div class="sweet-wrap">
+                                                                                        <ul class="sweet__items">
+                                                                                                                <li class="sweet__item">
+                                                                                                <div class="food-sweet__item">
+                                                                                                    
+                                                                                                        <h3 class="food-sweet__title" >PANEER PASANDA</h3>
+                                                                                                        
+                                                                                                        
+                                                                                                        <img src="https://www.chefkunalkapur.com/wp-content/uploads/2023/02/DSC07602-1300x731.jpg?v=1676875954" width="900" height="620" class="sweet" id="imageid" >
+                                                                                                        <img src="graph.png" class="cloud">      
+                                                                                                        <div  class="cloud1" id="20"><br><span>$14.99</span> <br> Stuffed indian cheese with nuts and khoa, cooked in rich tomato gravy.  </div>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                        </div>
+                                                                                        <div class="sweet-wrap">
+                                                                                            <ul class="sweet__items">
+                                                                                                                    <li class="sweet__item">
+                                                                                                    <div class="food-sweet__item">
+                                                                                                        
+                                                                                                            <h3 class="food-sweet__title" >SOYA CURRY</h3>
+                                                                                                            
+                                                                                                            
+                                                                                                            <img src="https://images.slurrp.com/prod/recipe_images/transcribe/nan/Soya-Chunks-Curry.webp" width="900" height="620" class="sweet" id="imageid" >
+                                                                                                            <img src="graph.png" class="cloud">     
+                                                                                                            <div class="cloud1" id="21"><br><span>$13.99</span> <br>Soya chaap cooked in a tangy curry sauce with rare spices.
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                    </div>
+                                                                                            <div class="sweet-wrap">
+                                                                                                <ul class="sweet__items">
+                                                                                                                 <li class="sweet__item">
+                                                                                                        <div class="food-sweet__item">
+                                                                                                                    
+                                                                                                            <h3 class="food-sweet__title" >PANEER BHURJI</h3>
+                                                                                                                                
+                                                                                                                                
+                                                                                                        <img src="https://mariasmenu.com/wp-content/uploads/Paneer-Bhurji.png" width="900" height="620" class="sweet" id="imageid" >
+                                                                                                        <img src="graph.png" class="cloud">     
+                                                                                                        <div class="cloud1" id="22"><br><span>$14.99</span> <br>Homemade Grated paneer sauteed with onion, tomato, bell pepper, and spices 
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                        </div>
+                                                                                            <div class="sweet-wrap">
+                                                                                                <ul class="sweet__items">
+                                                                                                       <li class="sweet__item">
+                                                                                                          <div class="food-sweet__item">
+                                                                                                                                                
+                                                                                                            <h3 class="food-sweet__title" >SAAG($12.99)</h3>
+                                                                                                                                            
+                                                                                                                                                    
+                                                                                                              <img src="https://www.thespruceeats.com/thmb/_ar6k9Sqqug6gmmwBP3lQu1aqkk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sarson-ka-saag-1957985-hero-01-7bb3c7be6bec456da4407eda0ef95707.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="23"><br><span></span></div>
+                                                                                                                <!-- <img src="graph.png" class="cloud">     
+                                                                                                               <div class="cloud1" id=""><br><span>$12.99</span> <br> -->
+                                                                                                </div>
+                                                                                           </li>
+                                                                                        </ul>
+                                                                                        </div>
+    
+    
+                                                        
+                                
+                                                                                                
+            </div>
+        </div>
+        <script>
+            const horizontalImages = document.querySelectorAll('.horizontalContainer a img');
+            const sweetWraps = document.querySelectorAll('.food-sweet__item');
+            const scrollableElement = document.querySelector('.scrollable');
+
+            function handleScroll() {
+                let currentScroll = scrollableElement.scrollTop;
+                sweetWraps.forEach((sweetWrap, index) => {
+                  let sweetWrapTop = sweetWrap.offsetTop - (window.innerWidth < 700 ? 700 : 500);
+                  let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                  if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                    highlightHorizontalImage(index);
+                    scrollToHighlightedImage(horizontalImages[index]);
+                  }
+                });
+              }
+              
+         
+            scrollableElement.addEventListener('scroll', handleScroll);
+           
+            window.addEventListener('scroll', () => {
+                  let currentScroll = window.scrollY;
+                  sweetWraps.forEach((sweetWrap, index) => {
+                    let sweetWrapTop = sweetWrap.offsetTop - 500;
+                    let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                    if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                      highlightHorizontalImage(index);
+                      scrollToHighlightedImage(horizontalImages[index]);
+                    }
+                  });
+                });
+
+                function highlightHorizontalImage(index) {
+                    horizontalImages.forEach((image, i) => {
+                      if (i === index) {
+                        image.classList.add('highlighted');
+                      } else {
+                        image.classList.remove('highlighted');
+                      }
+                    });
+                  }
+                
+                function scrollToHighlightedImage(image) {
+                  image.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+              }
+
+        </script>
+</body>
+
+</html>
