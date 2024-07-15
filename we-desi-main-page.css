@@ -384,7 +384,7 @@ video {
     z-index: 1;
     position: relative;
 
-    left: 50%;
+    left: 50% !important;
    
   }
 
@@ -509,7 +509,7 @@ video {
     .menu__categories{
        
         /* border: 2px solid black; */
-        max-width:1400px;
+        max-width:2000px;
        
         
         display: flex;
@@ -588,7 +588,7 @@ video {
 
 
 .sweet__categories{
-    max-width:1400px;
+    
        
        /* border: 2px solid white;  */
         display: flex;
